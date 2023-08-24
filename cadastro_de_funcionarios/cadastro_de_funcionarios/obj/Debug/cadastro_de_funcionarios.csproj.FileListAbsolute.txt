@@ -1,0 +1,471 @@
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe.config
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.pdb
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormLogin.resources
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormMenu.resources
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.pdb
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormCadastrar.resources
+C:\Users\Aluno\Desktop\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormInfos.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe.config
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csprojAssemblyReference.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormCadastrar.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormInfos.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormLogin.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormMenu.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.Properties.Resources.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.GenerateResource.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CoreCompileInputs.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\netstandard.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.AppContext.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Concurrent.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.NonGeneric.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Specialized.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.TypeConverter.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Console.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Data.Common.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Contracts.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Debug.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Process.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.StackTrace.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tools.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TraceSource.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tracing.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Drawing.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Dynamic.Runtime.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Calendars.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Watcher.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.IsolatedStorage.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.MemoryMappedFiles.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipes.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Expressions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Parallel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Queryable.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Http.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NameResolution.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NetworkInformation.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Ping.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Requests.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Security.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Sockets.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebHeaderCollection.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.Client.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ObjectModel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Reader.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.ResourceManager.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Writer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Handles.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Numerics.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Formatters.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Json.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Xml.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Claims.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Csp.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.SecureString.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.RegularExpressions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Overlapped.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Parallel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Thread.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.ThreadPool.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Timer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ValueTuple.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.ReaderWriter.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlSerializer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.XDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\MySql.Data.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Loader.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe.config
+E:\DESENVOLVIMENTO DE SISTEMAS\Cadastro de Funcionarios - DS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CopyComplete
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe.config
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.pdb
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\netstandard.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.AppContext.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Concurrent.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.NonGeneric.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Specialized.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.TypeConverter.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Console.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Data.Common.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Contracts.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Debug.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Process.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.StackTrace.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tools.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TraceSource.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tracing.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Drawing.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Dynamic.Runtime.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Calendars.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Extensions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Watcher.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.IsolatedStorage.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.MemoryMappedFiles.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipes.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Expressions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Parallel.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Queryable.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Http.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NameResolution.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NetworkInformation.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Ping.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Requests.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Security.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Sockets.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebHeaderCollection.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.Client.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ObjectModel.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Extensions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Reader.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.ResourceManager.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Writer.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Extensions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Handles.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Numerics.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Formatters.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Json.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Xml.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Claims.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Csp.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.SecureString.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.Extensions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.RegularExpressions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Overlapped.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Parallel.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Thread.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.ThreadPool.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Timer.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ValueTuple.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.ReaderWriter.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XDocument.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlDocument.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlSerializer.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.XDocument.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\MySql.Data.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Loader.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.pdb
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csprojAssemblyReference.cache
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe.config
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormAdministar.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormCadastrar.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormInfos.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormLogin.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormMenu.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.Properties.Resources.resources
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.GenerateResource.cache
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CoreCompileInputs.cache
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CopyComplete
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.pdb
+E:\DS POGGERSS\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormConsulta.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe.config
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\netstandard.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.AppContext.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Concurrent.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.NonGeneric.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Collections.Specialized.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ComponentModel.TypeConverter.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Console.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Data.Common.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Contracts.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Debug.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Process.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.StackTrace.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tools.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.TraceSource.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Diagnostics.Tracing.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Drawing.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Dynamic.Runtime.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Calendars.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Globalization.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.FileSystem.Watcher.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.IsolatedStorage.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.MemoryMappedFiles.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipes.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Expressions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Parallel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Linq.Queryable.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Http.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NameResolution.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.NetworkInformation.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Ping.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Requests.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Security.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.Sockets.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebHeaderCollection.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.Client.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Net.WebSockets.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ObjectModel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Reflection.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Reader.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.ResourceManager.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Resources.Writer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Handles.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Numerics.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Formatters.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Json.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Serialization.Xml.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Claims.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Csp.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.SecureString.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.RegularExpressions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Overlapped.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Parallel.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Thread.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.ThreadPool.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Timer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.ValueTuple.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.ReaderWriter.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XmlSerializer.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Xml.XPath.XDocument.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\MySql.Data.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.Loader.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\BouncyCastle.Crypto.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Google.Protobuf.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\K4os.Hash.xxHash.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Buffers.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.IO.Pipelines.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Memory.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Numerics.Vectors.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.AccessControl.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Permissions.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Security.Principal.Windows.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Encodings.Web.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Text.Json.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csprojAssemblyReference.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe.config
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormAdministar.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormCadastrar.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormConsulta.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormInfos.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormLogin.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.FormMenu.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.Properties.Resources.resources
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.GenerateResource.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CoreCompileInputs.cache
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.csproj.CopyComplete
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.pdb
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.exe.manifest
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\bin\Debug\cadastro_de_funcionarios.application
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.exe.manifest
+E:\DESENVOLVIMENTO DE SISTEMAS\DS ULTIMA VERSAO\cadastro_de_funcionarios\cadastro_de_funcionarios\obj\Debug\cadastro_de_funcionarios.application

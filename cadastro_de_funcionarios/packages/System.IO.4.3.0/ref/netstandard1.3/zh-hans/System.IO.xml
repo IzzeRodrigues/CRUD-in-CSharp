@@ -1,0 +1,2237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.BinaryReader">
+      <summary>用特定的编码将基元数据类型读作二进制值。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.#ctor(System.IO.Stream)">
+      <summary>基于所指定的流和特定的 UTF-8 编码，初始化 <see cref="T:System.IO.BinaryReader" /> 类的新实例。</summary>
+      <param name="input">输入流。</param>
+      <exception cref="T:System.ArgumentException">该流不支持读取，为null 或已关闭。</exception>
+    </member>
+    <member name="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)">
+      <summary>基于所指定的流和特定的字符编码，初始化 <see cref="T:System.IO.BinaryReader" /> 类的新实例。</summary>
+      <param name="input">输入流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <exception cref="T:System.ArgumentException">该流不支持读取，为null 或已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="encoding" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)">
+      <summary>基于所提供的流和特定的字符编码，初始化 <see cref="T:System.IO.BinaryReader" /> 类的新实例，有选择性的打开流。</summary>
+      <param name="input">输入流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="leaveOpen">如果在释放 <see cref="T:System.IO.BinaryReader" /> 对象后保持流处于打开状态，则为 true；否则为 false。</param>
+      <exception cref="T:System.ArgumentException">该流不支持读取，为null 或已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="encoding" /> 或 <paramref name="input" /> 为 null。</exception>
+    </member>
+    <member name="P:System.IO.BinaryReader.BaseStream">
+      <summary>公开对 <see cref="T:System.IO.BinaryReader" /> 的基础流的访问。</summary>
+      <returns>与 BinaryReader 关联的基础流。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.Dispose">
+      <summary>释放 <see cref="T:System.IO.BinaryReader" /> 类的当前实例所使用的所有资源。</summary>
+    </member>
+    <member name="M:System.IO.BinaryReader.Dispose(System.Boolean)">
+      <summary>释放 <see cref="T:System.IO.BinaryReader" /> 类使用的非托管资源，并可以选择释放托管资源。</summary>
+      <param name="disposing">若要释放托管资源和非托管资源，则为 true；若仅释放非托管资源，则为 false。</param>
+    </member>
+    <member name="M:System.IO.BinaryReader.FillBuffer(System.Int32)">
+      <summary>用从流中读取的指定字节数填充内部缓冲区。</summary>
+      <param name="numBytes">要读取的字节数。</param>
+      <exception cref="T:System.IO.EndOfStreamException">在可以读取 <paramref name="numBytes" /> 之前到达了流的末尾。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">请求的 <paramref name="numBytes" /> 大于内部缓冲区大小。</exception>
+    </member>
+    <member name="M:System.IO.BinaryReader.PeekChar">
+      <summary>返回下一个可用的字符，并且不提升字节或字符的位置。</summary>
+      <returns>下一个可用的字符，或者，如果没有可用字符或者流不支持查找时为 -1。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ArgumentException">当前字符无法通过使用为该流选择的 <see cref="T:System.Text.Encoding" /> 解码到内部字符缓冲区中。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.Read">
+      <summary>从基础流中读取字符，并根据所使用的 Encoding 和从流中读取的特定字符，提升流的当前位置。</summary>
+      <returns>输入流中的下一个字符，如果当前无可用字符则为 -1。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>从字节数组中的指定点开始，从流中读取指定的字节数。</summary>
+      <returns>读入 <paramref name="buffer" /> 的字节数。如果可用的字节没有请求的那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+      <param name="buffer">将数据读入的缓冲区。</param>
+      <param name="index">缓冲区中的起始点，在该处开始读入缓冲区。</param>
+      <param name="count">要读取的字节数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。- 或 -要读取的解码字符数大于 <paramref name="count" />。如果 Unicode 解码器返回回退字符或代理项对，则可能发生此情况。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)">
+      <summary>从字符数组中的指定点开始，从流中读取指定的字符数。</summary>
+      <returns>读入缓冲区的总字符数。如果当前可用的字节没有请求的那么多，此数可能小于所请求的字符数；如果到达了流的末尾，此数可能为零。</returns>
+      <param name="buffer">将数据读入的缓冲区。</param>
+      <param name="index">缓冲区中的起始点，在该处开始读入缓冲区。</param>
+      <param name="count">要读取的字符数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。- 或 -要读取的解码字符数大于 <paramref name="count" />。如果 Unicode 解码器返回回退字符或代理项对，则可能发生此情况。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.Read7BitEncodedInt">
+      <summary>以压缩格式读入 32 位整数。</summary>
+      <returns>压缩格式的 32 位整数。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">流已损坏。</exception>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadBoolean">
+      <summary>从当前流中读取 Boolean 值，并使该流的当前位置提升 1 个字节。</summary>
+      <returns>如果字节为非零，则为 true，否则为 false。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadByte">
+      <summary>从当前流中读取下一个字节，并使流的当前位置提升 1 个字节。</summary>
+      <returns>从当前流中读取的下一个字节。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadBytes(System.Int32)">
+      <summary>从当前流中读取指定的字节数以写入字节数组中，并将当前位置前移相应的字节数。</summary>
+      <returns>包含从基础流中读取的数据的字节数组。如果到达了流的末尾，则该字节数组可能小于所请求的字节数。</returns>
+      <param name="count">要读取的字节数。此值必须为 0 或非负数字，否则将出现异常。</param>
+      <exception cref="T:System.ArgumentException">要读取的解码字符数大于 <paramref name="count" />。如果 Unicode 解码器返回回退字符或代理项对，则可能发生此情况。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="count" /> 为负数。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadChar">
+      <summary>从当前流中读取下一个字符，并根据所使用的 Encoding 和从流中读取的特定字符，提升流的当前位置。</summary>
+      <returns>从当前流中读取的字符。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ArgumentException">读取了一个代理项字符。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadChars(System.Int32)">
+      <summary>从当前流中读取指定的字符数，并以字符数组的形式返回数据，然后根据所使用的 Encoding 和从流中读取的特定字符，将当前位置前移。</summary>
+      <returns>包含从基础流中读取的数据的字节数组。如果到达了流的末尾，则该字符数组可能小于所请求的字符数。</returns>
+      <param name="count">要读取的字符数。</param>
+      <exception cref="T:System.ArgumentException">要读取的解码字符数大于 <paramref name="count" />。如果 Unicode 解码器返回回退字符或代理项对，则可能发生此情况。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="count" /> 为负数。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadDecimal">
+      <summary>从当前流中读取十进制数值，并将该流的当前位置提升十六个字节。</summary>
+      <returns>从当前流中读取的十进制数值。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadDouble">
+      <summary>从当前流中读取 8 字节浮点值，并使流的当前位置提升 8 个字节。</summary>
+      <returns>从当前流中读取的 8 字节浮点值。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadInt16">
+      <summary>从当前流中读取 2 字节有符号整数，并使流的当前位置提升 2 个字节。</summary>
+      <returns>从当前流中读取的 2 字节有符号整数。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadInt32">
+      <summary>从当前流中读取 4 字节有符号整数，并使流的当前位置提升 4 个字节。</summary>
+      <returns>从当前流中读取的 2 字节有符号整数。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadInt64">
+      <summary>从当前流中读取 8 字节有符号整数，并使流的当前位置提升 8 个字节。</summary>
+      <returns>从当前流中读取的 8 字节有符号整数。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadSByte">
+      <summary>从此流中读取 1 个有符号字节，并使流的当前位置提升 1 个字节。</summary>
+      <returns>从当前流中读取的一个有符号字节。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadSingle">
+      <summary>从当前流中读取 4 字节浮点值，并使流的当前位置提升 4 个字节。</summary>
+      <returns>从当前流中读取的 4 字节浮点值。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadString">
+      <summary>从当前流中读取一个字符串。字符串有长度前缀，一次 7 位地被编码为整数。</summary>
+      <returns>正被读取的字符串。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDispo3edEx`ep|ion2~流已关闭��</exceptio~<
+   ` "|exceptioncvef="T:System.IO.IOExcepTikn">发��� I/O ���误。</except)oj>
+   �  <faltebprmority>3<.filtevpbiovity>
+(   </eembEr>
+    <mmmsgp name="M:Syctem>IOBmnaryRecder�RecdU	nt16"<
+      $summAry�使�� LittLe=Endian编���䫎当前流席读取 : 字节无嬦号慴数�<����将���的彍g��提升 2(个字������</stmmazy>
+   0  <returns>从该流丯���取的 ""字节无笤e��整��� �</returns>
+      <dxkeption cref="T8RystemIO.DndOfStrdamExceptioo">已到���浀的末堾。=/excepti.n>
+    $ <excaption cref="T:System.Ob*ectDisposedExcettion">汁已关闭�</exceptioj>
+   "  ,exaeptIon cred="T:System,IOnIOExceptionb<����$Y-N(閙误も</exceptio�
+   !  8fil�erqriority62</filTerprioriT[?
+    >/member>
+    <mEmbur"name="M:Systdm.IO.BinariR%ader.ReadUInt32">
+     `<summavy>从彳前流䨭读䏖 4 字Ȋ�无符䏷整数并伿浑皆Ž�前���置提升 4 个字莂��</{umm!ri:
+      <petwrns>俎���流中쯫取暄 4 字�旨符号╰数。|/re�upns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryReader.ReadUInt64">
+      <summary>从当前流中读取 8 字节无符号整数并使流的当前位置提升 8 个字节。</summary>
+      <returns>从该流中读取的 8 字节无符号整数。</returns>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="T:System.IO.BinaryWriter">
+      <summary>以二进制形式将基元类型写入流，并支持用特定的编码写入字符串。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.#ctor">
+      <summary>初始化向流中写入的 <see cref="T:System.IO.BinaryWriter" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.BinaryWriter.#ctor(System.IO.Stream)">
+      <summary>基于所指定的流和特定的 UTF-8 编码，初始化 <see cref="T:System.IO.BinaryWriter" /> 类的新实例。</summary>
+      <param name="output">输出流。</param>
+      <exception cref="T:System.ArgumentException">该流不支持写入或者该流已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="output" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding)">
+      <summary>基于所指定的流和特定的字符编码，初始化 <see cref="T:System.IO.BinaryWriter" /> 类的新实例。</summary>
+      <param name="output">输出流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <exception cref="T:System.ArgumentException">该流不支持写入或者该流已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="output" /> 或 <paramref name="encoding" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)">
+      <summary>基于所提供的流和特定的字符编码，初始化 <see cref="T:System.IO.BinaryWriter" /> 类的新实例，有选择性的打开流。</summary>
+      <param name="output">输出流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="leaveOpen">如果在释放 <see cref="T:System.IO.BinaryWriter" /> 对象之后打开流对象，则为 true；否则为， false。</param>
+      <exception cref="T:System.ArgumentException">该流不支持写入或者该流已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="output" /> 或 <paramref name="encoding" /> 为 null。</exception>
+    </member>
+    <member name="P:System.IO.BinaryWriter.BaseStream">
+      <summary>获取 <see cref="T:System.IO.BinaryWriter" /> 的基础流。</summary>
+      <returns>与 BinaryWriter 关联的基础流。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Dispose">
+      <summary>释放由 <see cref="T:System.IO.BinaryWriter" /> 类的当前实例占用的所有资源。</summary>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.BinaryWriter" /> 占用的非托管资源，还可以另外再释放托管资源。</summary>
+      <param name="disposing">true 表示释放托管资源和非托管资源；false 表示仅释放非托管资源。</param>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Flush">
+      <summary>清理当前编写器的所有缓冲区，使所有缓冲数据写入基础设备。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:System.IO.BinaryWriter.Null">
+      <summary>指定无后备存储区的 <see cref="T:System.IO.BinaryWriter" />。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:System.IO.BinaryWriter.OutStream">
+      <summary>持有基础流。</summary>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Seek(System.Int32,System.IO.SeekOrigin)">
+      <summary>设置当前流中的位置。</summary>
+      <returns>包含当前流的位置。</returns>
+      <param name="offset">相对于 <paramref name="origin" /> 的字节偏移量。</param>
+      <param name="origin">
+        <see cref="T:System.IO.SeekOrigin" /> 的一个字段，指示获取新位置所依据的参考点。</param>
+      <exception cref="T:System.IO.IOException">文件指针被移到无效位置。</exception>
+      <exception cref="T:System.ArgumentException">
+        <see cref="T:System.IO.SeekOrigin" /> 值无效。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Boolean)">
+      <summary>将单字节 Boolean 值写入当前流，其中 0 表示 false，1 表示 true。</summary>
+      <param name="value">要写入的 Boolean 值（0 或 1）。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Byte)">
+      <summary>将一个无符号字节写入当前流，并将流的位置提升 1 个字节。</summary>
+      <param name="value">要写入的无符号字节。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Byte[])">
+      <summary>将字节数组写入基础流。</summary>
+      <param name="buffer">包含要写入的数据的字节数组。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>将字节数组部分写入当前流。</summary>
+      <param name="buffer">包含要写入的数据的字节数组。</param>
+      <param name="index">
+        <paramref name="buffer" /> 中开始写入的起始点。</param>
+      <param name="count">要写入的字节数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Char)">
+      <summary>将 Unicode 字符写入当前流，并根据所使用的 Encoding 和向流中写入的特定字符，提升流的当前位置。</summary>
+      <param name="ch">要写入的非代理项 Unicode 字符。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="ch" /> 是单一代理项字符。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Char[])">
+      <summary>将字符数组写入当前流，并根据所使用的 Encoding 和向流中写入的特定字符，提升流的当前位置。</summary>
+      <param name="chars">包含要写入的数据的字符数组。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="chars" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符数组部分写入当前流，并根据所使用的 Encoding（可能还根据向流中写入的特定字符），提升流的当前位置。</summary>
+      <param name="chars">包含要写入的数据的字符数组。</param>
+      <param name="index">
+        <paramref name="chars" /> 中开始写入的起始点。</param>
+      <param name="count">要写入的字符数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="chars" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Decimal)">
+      <summary>将一个十进制值写入当前流，并将流位置提升十六个字节。</summary>
+      <param name="value">要写入的十进制值。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Double)">
+      <summary>将 8 字节浮点值写入当前流，并将流的位置提升 8 个字节。</summary>
+      <param name="value">要写入的 8 字节浮点值。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Int16)">
+      <summary>将 2 字节有符号整数写入当前流，并将流的位置提升 2 个字节。</summary>
+      <param name="value">要写入的 2 字节有符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Int32)">
+      <summary>将 4 字节有符号整数写入当前流，并将流的位置提升 4 个字节。</summary>
+      <param name="value">要写入的 4 字节有符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Int64)">
+      <summary>将 8 字节有符号整数写入当前流，并将流的位置提升 8 个字节。</summary>
+      <param name="value">要写入的 8 字节有符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.SByte)">
+      <summary>将一个有符号字节写入当前流，并将流的位置提升 1 个字节。</summary>
+      <param name="value">要写入的有符号字节。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.Single)">
+      <summary>将 4 字节浮点值写入当前流，并将流的位置提升 4 个字节。</summary>
+      <param name="value">要写入的 4 字节浮点值。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.String)">
+      <summary>将有长度前缀的字符串按 <see cref="T:System.IO.BinaryWriter" /> 的当前编码写入此流，并根据所使用的编码和写入流的特定字符，提升流的当前位置。</summary>
+      <param name="value">要写入的值。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="value" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.UInt16)">
+      <summary>将 2 字节无符号整数写入当前流，并将流的位置提升 2 个字节。</summary>
+      <param name="value">要写入的 2 字节无符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.UInt32)">
+      <summary>将 4 字节无符号整数写入当前流，并将流的位置提升 4 个字节。</summary>
+      <param name="value">要写入的 4 字节无符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write(System.UInt64)">
+      <summary>将 8 字节无符号整数写入当前流，并将流的位置提升 8 个字节。</summary>
+      <param name="value">要写入的 8 字节无符号整数。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.BinaryWriter.Write7BitEncodedInt(System.Int32)">
+      <summary>以压缩格式写出 32 位整数。</summary>
+      <param name="value">要写出的 32 位整数。</param>
+      <exception cref="T:System.IO.EndOfStreamException">已到达流的末尾。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <exception cref="T:System.IO.IOException">流已关闭。</exception>
+    </member>
+    <member name="T:System.IO.EndOfStreamException">
+      <summary>读操作试图超出流的末尾时引发的异常。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.EndOfStreamException.#ctor">
+      <summary>初始化 <see cref="T:System.IO.EndOfStreamException" /> 类的新实例，将其消息字符串设置为系统提供的消息，其 HRESULT 设置为 COR_E_ENDOFSTREAM。</summary>
+    </member>
+    <member name="M:System.IO.EndOfStreamException.#ctor(System.String)">
+      <summary>初始化 <see cref="T:System.IO.EndOfStreamException" /> 类的新实例，使其消息字符串设置为 <paramref name="message" />，其 HRESULT 设置为 COR_E_ENDOFSTREAM。</summary>
+      <param name="message">描述错误的字符串。<paramref name="message" /> 的内容被设计为人可理解的形式。此构造函数的调用方需要确保此字符串已针对当前系统区域性进行了本地化。</param>
+    </member>
+    <member name="M:System.IO.EndOfStreamException.#ctor(System.String,System.Exception)">
+      <summary>使用指定错误信息和对作为此异常原因的内部异常的引用来初始化 <see cref="T:System.IO.EndOfStreamException" /> 类的新实例。</summary>
+      <param name="message">描述错误的字符串。<paramref name="message" /> 的内容被设计为人可理解的形式。此构造函数的调用方需要确保此字符串已针对当前系统区域性进行了本地化。</param>
+      <param name="innerException">导致当前异常的异常。如果 <paramref name="innerException" /> 参数不为 null，则当前异常将在处理内部异常的 catch 块中引发。</param>
+    </member>
+    <member name="T:System.IO.InvalidDataException">
+      <summary>在数据流的格式无效时引发的异常。</summary>
+    </member>
+    <member name="M:System.IO.InvalidDataException.#ctor">
+      <summary>初始化 <see cref="T:System.IO.InvalidDataException" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.InvalidDataException.#ctor(System.String)">
+      <summary>使用指定的错误消息初始化 <see cref="T:System.IO.InvalidDataException" /> 类的新实例。</summary>
+      <param name="message">解释异常原因的错误信息。</param>
+    </member>
+    <member name="M:System.IO.InvalidDataException.#ctor(System.String,System.Exception)">
+      <summary>用对作为此异常原因的内部异常的引用初始化 <see cref="T:System.IO.InvalidDataException" /> 类的新实例。</summary>
+      <param name="message">解释异常原因的错误信息。</param>
+      <param name="innerException">导致当前异常的异常。如果 <paramref name="innerException" /> 参数不为 null，则当前异常将在处理内部异常的 catch 块中引发。</param>
+    </member>
+    <member name="T:System.IO.MemoryStream">
+      <summary>创建一个流，其后备存储为内存。若要浏览此类型的.NET Framework 源代码，请参阅 Reference Source。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor">
+      <summary>使用初始化为零的可扩展容量初始化 <see cref="T:System.IO.MemoryStream" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Byte[])">
+      <summary>基于指定的字节数组初始化 <see cref="T:System.IO.MemoryStream" /> 类的无法调整大小的新实例。</summary>
+      <param name="buffer">从中创建当前流的无符号字节数组。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Byte[],System.Boolean)">
+      <summary>在 <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性按指定设置的状态下，基于指定的字节数组初始化 <see cref="T:System.IO.MemoryStream" /> 类的无法调整大小的新实例。</summary>
+      <param name="buffer">从中创建此流的无符号字节的数组。</param>
+      <param name="writable">
+        <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性的设置，确定该流是否支持写入。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Byte[],System.Int32,System.Int32)">
+      <summary>基于字节数组的指定区域（索引）初始化 <see cref="T:System.IO.MemoryStream" /> 类的无法调整大小的新实例。</summary>
+      <param name="buffer">从中创建此流的无符号字节的数组。</param>
+      <param name="index">
+        <paramref name="buffer" /> 内的索引，流从此处开始。</param>
+      <param name="count">流的长度（以字节为单位）。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 小于零。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+      <summary>在 <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性按指定设置的状态下，基于字节数组的指定区域，初始化 <see cref="T:System.IO.MemoryStream" /> 类的无法调整大小的新实例。</summary>
+      <param name="buffer">从中创建此流的无符号字节的数组。</param>
+      <param name="index">
+        <paramref name="buffer" /> 内的索引，流从此处开始。</param>
+      <param name="count">流的长度（以字节为单位）。</param>
+      <param name="writable">
+        <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性的设置，确定该流是否支持写入。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Byte[],System.Int32,System.Int32,System.Boolean,System.Boolean)">
+      <summary>在 <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性和调用 <see cref="M:System.IO.MemoryStream.GetBuffer" /> 的能力按指定设置的状态下，基于字节数组的指定区域初始化 <see cref="T:System.IO.MemoryStream" /> 类的新实例。</summary>
+      <param name="buffer">从中创建此流的无符号字节的数组。</param>
+      <param name="index">
+        <paramref name="buffer" /> 内的索引，流从此处开始。</param>
+      <param name="count">流的长度（以字节为单位）。</param>
+      <param name="writable">
+        <see cref="P:System.IO.MemoryStream.CanWrite" /> 属性的设置，确定该流是否支持写入。</param>
+      <param name="publiclyVisible">设置为 true 可以启用 <see cref="M:System.IO.MemoryStream.GetBuffer" />，它返回无符号字节数组，流从该数组创建；否则为 false。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.#ctor(System.Int32)">
+      <summary>使用按指定要求初始化的可扩展容量初始化 <see cref="T:System.IO.MemoryStream" /> 类的新实例。</summary>
+      <param name="capacity">内部数组的初始大小（以字节为单位）。</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="capacity" /> 为负数。</exception>
+    </member>
+    <member name="P:System.IO.MemoryStream.CanRead">
+      <summary>获取一个值，该值指示当前流是否支持读取。</summary>
+      <returns>如果流是打开的，则为 true。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.MemoryStream.CanSeek">
+      <summary>获取一个值，该值指示当前流是否支持查找。</summary>
+      <returns>如果流是打开的，则为 true。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.MemoryStream.CanWrite">
+      <summary>获取一个值，该值指示当前流是否支持写入。</summary>
+      <returns>如果流支持写入，则为 true；否则为 false。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.MemoryStream.Capacity">
+      <summary>获取或设置分配给该流的字节数。</summary>
+      <returns>流的缓冲区的可使用部分的长度。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">容量设置为负或小于流的当前长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流已关闭。</exception>
+      <exception cref="T:System.NotSupportedException">对不能修改其容量的流调用 set。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)">
+      <summary>使用指定的缓冲区大小和取消令牌，从当前流中异步读取所有字节并将其写入到另一个流中。</summary>
+      <returns>表示异步复制操作的任务。</returns>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <param name="bufferSize">缓冲区的大小（以字节为单位）。此值必须大于零。</param>
+      <param name="cancellationToken">要监视取消请求的标记。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="buffersize" /> 为负数或零。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流或目标流已释放。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持阅读，或目标流不支持写入。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.Dispose(System.Boolean)">
+      <summary>释放 <see cref="T:System.IO.MemoryStream" /> 类使用的非托管资源，并可以选择释放托管资源。</summary>
+      <param name="disposing">若要释放托管资源和非托管资源，则为 true；若仅释放非托管资源，则为 false。</param>
+    </member>
+    <member name="M:System.IO.MemoryStream.Flush">
+      <summary>重写 <see cref="M:System.IO.Stream.Flush" /> 方法以便不执行任何操作。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.FlushAsync(System.Threading.CancellationToken)">
+      <summary>异步清除此流的所有缓冲区，并监视取消请求。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+      <param name="cancellationToken">要监视取消请求的标记。</param>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+    </member>
+    <member name="P:System.IO.MemoryStream.Length">
+      <summary>获取流的长度（以字节为单位）。</summary>
+      <returns>流的长度（以字节为单位）。</returns>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.MemoryStream.Position">
+      <summary>获取或设置流中的当前位置。</summary>
+      <returns>流中的当前位置。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">此位置设置为负值或大于 <see cref="F:System.Int32.MaxValue" /> 的值。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>从当前流中读取字节块并将数据写入缓冲区。</summary>
+      <returns>写入缓冲区中的总字节数。如果字节数当前不可用，则总字节数可能小于所请求的字节数；如果在读取到任何字节前已到达流结尾，则为零。</returns>
+      <param name="buffer">当此方法返回时，包含指定的字节数组，该数组中从 <paramref name="offset" /> 到 (<paramref name="offset" /> + <paramref name="count" /> -1) 之间的值由从当前流中读取的字符替换。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始存储当前流中的数据。</param>
+      <param name="count">最多读取的字节数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="offset" /> 的结果小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流实例已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
+      <summary>从当前流异步读取字节的序列，将流中的位置提升读取的字节数，并监视取消请求。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可小于所请求的字节数；如果已到达流结尾时，则为 0（零）。</returns>
+      <param name="buffer">数据写入的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的字节偏移量，从该偏移量开始写入从流中读取的数据。</param>
+      <param name="count">最多读取的字节数。</param>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持读取。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.ReadByte">
+      <summary>从当前流中读取一个字节。</summary>
+      <returns>强制转换为 <see cref="T:System.Int32" /> 的字节；或者如果已到达流的末尾，则为 -1。</returns>
+      <exception cref="T:System.ObjectDisposedException">当前流实例已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>将当前流中的位置设置为指定值。</summary>
+      <returns>流内的新位置，通过将初始引用点和偏移量合并计算而得。</returns>
+      <param name="offset">流内的新位置。它是相对于 <paramref name="loc" /> 参数的位置，而且可正可负。</param>
+      <param name="loc">类型 <see cref="T:System.IO.SeekOrigin" /> 的值，它用作查找引用点。</param>
+      <exception cref="T:System.IO.IOException">试图在流的开始位置之前查找。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ArgumentException">
+        <see cref="T:System.IO.SeekOrigin" /> 无效。- 或 -<paramref name="offset" /> 导致算法溢出。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流实例已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.SetLength(System.Int64)">
+      <summary>将当前流的长度设为指定值。</summary>
+      <param name="value">用于设置长度的值。</param>
+      <exception cref="T:System.NotSupportedException">当前流无法调整大小，而且 <paramref name="value" /> 大于当前容量。- 或 - 当前流不支持写入。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="value" /> 为负或者大于 <see cref="T:System.IO.MemoryStream" /> 的最大长度，其中最大长度为 (<see cref="F:System.Int32.MaxValue" />- origin)，origin 为基础缓冲区中作为流的起点的索引。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.ToArray">
+      <summary>将流内容写入字节数组，而与 <see cref="P:System.IO.MemoryStream.Position" /> 属性无关。</summary>
+      <returns>新的字节数组。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.TryGetBuffer(System.ArraySegment{System.Byte}@)">
+      <summary>返回从中创建此流的无符号字节的数组。用于指示转换是否成功的返回值。</summary>
+      <returns>如果转换成功，则为 true；否则为 false。</returns>
+      <param name="buffer">用于创建此流的字节数组段。</param>
+    </member>
+    <member name="M:System.IO.MemoryStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>使用从缓冲区读取的数据将字节块写入当前流。</summary>
+      <param name="buffer">从中写入数据的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始将字节复制到当前流。</param>
+      <param name="count">最多写入的字节数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入。有关其他信息，请参见 <see cref="P:System.IO.Stream.CanWrite" />。- 或 - 当前位置到流结尾的距离小于 <paramref name="count" /> 字节，并且无法修改容量。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="offset" /> 的结果小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流实例已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
+      <summary>将字节的序列异步写入当前流，将该流中的当前位置向前移动写入的字节数，并监视取消请求。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">从中写入数据的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始将字节复制到该流。</param>
+      <param name="count">最多写入的字节数。</param>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.MemoryStream.WriteByte(System.Byte)">
+      <summary>将一个字节写入当前位置上的当前流。</summary>
+      <param name="value">要写入的字节。</param>
+      <exception cref="T:System.NotSupportedException">流不支持写入。有关其他信息，请参见 <see cref="P:System.IO.Stream.CanWrite" />。- 或 - 当前位置位于流的末尾，而且容量不能被修改。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.MemoryStream.WriteTo(System.IO.Stream)">
+      <summary>将此内存流的整个内容写入到另一个流中。</summary>
+      <param name="stream">要写入此内存流的流。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流或目标流已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="T:System.IO.SeekOrigin">
+      <summary>指定在流的位置以查找使用。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="F:System.IO.SeekOrigin.Begin">
+      <summary>指定流的开头。</summary>
+    </member>
+    <member name="F:System.IO.SeekOrigin.Current">
+      <summary>指定流内的当前位置。</summary>
+    </member>
+    <member name="F:System.IO.SeekOrigin.End">
+      <summary>指定流的结尾。</summary>
+    </member>
+    <member name="T:System.IO.Stream">
+      <summary>提供字节序列的一般视图。这是一个抽象类。若要浏览此类型的.NET Framework 源代码，请参阅 Reference Source。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.#ctor">
+      <summary>初始化 <see cref="T:System.IO.Stream" /> 类的新实例。</summary>
+    </member>
+    <member name="P:System.IO.Stream.CanRead">
+      <summary>当在派生类中重写时，获取指示当前流是否支持读取的值。</summary>
+      <returns>如果流支持读取，为 true；否则为 false。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.CanSeek">
+      <summary>当在派生类中重写时，获取指示当前流是否支持查找功能的值。</summary>
+      <returns>如果流支持查找，为 true；否则为 false。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.CanTimeout">
+      <summary>获取一个值，该值确定当前流是否可以超时。</summary>
+      <returns>一个确定当前流是否可以超时的值。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.CanWrite">
+      <summary>当在派生类中重写时，获取指示当前流是否支持写入功能的值。</summary>
+      <returns>如果流支持写入，则为 true；否则为 false。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.CopyTo(System.IO.Stream)">
+      <summary>从当前流中读取字节并将其写入到另一流中。</summary>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持读取。- 或 -<paramref name="destination" /> 不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">在调用 <paramref name="destination" /> 方法前当前流或 <see cref="M:System.IO.Stream.CopyTo(System.IO.Stream)" /> 已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生了 I/O 错误。</exception>
+    </member>
+    <member name="M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)">
+      <summary>使用指定的缓冲区大小，从当前流中读取字节并将其写入到另一流中。</summary>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <param name="bufferSize">缓冲区的大小。此值必须大于零。默认大小为 81920。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="bufferSize" /> 为负数或零。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持读取。- 或 -<paramref name="destination" /> 不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">在调用 <paramref name="destination" /> 方法前当前流或 <see cref="M:System.IO.Stream.CopyTo(System.IO.Stream)" /> 已关闭。</exception>
+      <exception cref="T:System.IO.IOException">发生了 I/O 错误。</exception>
+    </member>
+    <member name="M:System.IO.Stream.CopyToAsync(System.IO.Stream)">
+      <summary>从当前流中异步读取字节并将其写入到另一个流中。</summary>
+      <returns>表示异步复制操作的任务。</returns>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流或目标流已释放。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持阅读，或目标流不支持写入。</exception>
+    </member>
+    <member name="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)">
+      <summary>使用指定的缓冲区大小，从当前流中异步读取字节并将其写入到另一流中。</summary>
+      <returns>表示异步复制操作的任务。</returns>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <param name="bufferSize">缓冲区的大小（以字节为单位）。此值必须大于零。默认大小为 81920。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="buffersize" /> 为负数或零。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流或目标流已释放。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持阅读，或目标流不支持写入。</exception>
+    </member>
+    <member name="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)">
+      <summary>使用指定的缓冲区大小和取消令牌，从当前流中异步读取字节并将其写入到另一个流中。</summary>
+      <returns>表示异步复制操作的任务。</returns>
+      <param name="destination">当前流的内容将复制到的流。</param>
+      <param name="bufferSize">缓冲区的大小（以字节为单位）。此值必须大于零。默认大小为 81920。</param>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="destination" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="buffersize" /> 为负数或零。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前流或目标流已释放。</exception>
+      <exception cref="T:System.NotSupportedException">当前流不支持阅读，或目标流不支持写入。</exception>
+    </member>
+    <member name="M:System.IO.Stream.Dispose">
+      <summary>释放由 <see cref="T:System.IO.Stream" /> 使用的所有资源。</summary>
+    </member>
+    <member name="M:System.IO.Stream.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.Stream" /> 占用的非托管资源，还可以释放托管资源。</summary>
+      <param name="disposing">若要释放托管资源和非托管资源，则为 true；若仅释放非托管资源，则为 false。</param>
+    </member>
+    <member name="M:System.IO.Stream.Flush">
+      <summary>当在派生类中重写时，将清除该流的所有缓冲区，并使得所有缓冲数据被写入到基础设备。</summary>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.FlushAsync">
+      <summary>异步清除此流的所有缓冲区并导致所有缓冲数据都写入基础设备中。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+    </member>
+    <member name="M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)">
+      <summary>异步清理这个流的所有缓冲区，并使所有缓冲数据写入基础设备，并且监控取消请求。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+    </member>
+    <member name="P:System.IO.Stream.Length">
+      <summary>当在派生类中重写时，获取流长度（以字节为单位）。</summary>
+      <returns>表示流长度（以字节为单位）的长值。</returns>
+      <exception cref="T:System.NotSupportedException">从 Stream 派生的类不支持查找。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:System.IO.Stream.Null">
+      <summary>无后备存储区的 Stream。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.Position">
+      <summary>当在派生类中重写时，获取或设置当前流中的位置。</summary>
+      <returns>流中的当前位置。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持查找。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>当在派生类中重写时，从当前流读取字节序列，并将此流中的位置提升读取的字节数。</summary>
+      <returns>读入缓冲区中的总字节数。如果很多字节当前不可用，则总字节数可能小于请求的字节数；如果已到达流结尾，则为零 (0)。</returns>
+      <param name="buffer">字节数组。此方法返回时，该缓冲区包含指定的字符数组，该数组的 <paramref name="offset" /> 和 (<paramref name="offset" /> + <paramref name="count" /> -1) 之间的值由从当前源中读取的字节替换。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始存储从当前流中读取的数据。</param>
+      <param name="count">要从当前流中最多读取的字节数。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持读取。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)">
+      <summary>从当前流异步读取字节序列，并将流中的位置提升读取的字节数。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可小于所请求的字节数；如果已到达流结尾时，则为 0（零）。</returns>
+      <param name="buffer">数据写入的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的字节偏移量，从该偏移量开始写入从流中读取的数据。</param>
+      <param name="count">最多读取的字节数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持读取。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
+      <summary>从当前流异步读取字节的序列，将流中的位置提升读取的字节数，并监视取消请求。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可小于所请求的字节数；如果已到达流结尾时，则为 0（零）。</returns>
+      <param name="buffer">数据写入的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的字节偏移量，从该偏移量开始写入从流中读取的数据。</param>
+      <param name="count">最多读取的字节数。</param>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持读取。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.Stream.ReadByte">
+      <summary>从流中读取一个字节，并将流内的位置向前提升一个字节，或者如果已到达流结尾，则返回 -1。</summary>
+      <returns>强制转换为 Int32 的无符号字节，如果到达流的末尾，则为 -1。</returns>
+      <exception cref="T:System.NotSupportedException">流不支持读取。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.ReadTimeout">
+      <summary>获取或设置一个值（以毫秒为单位），该值确定流在超时前尝试读取多长时间。</summary>
+      <returns>一个确定流在超时前尝试读取多长时间的值（以毫秒为单位）。</returns>
+      <exception cref="T:System.InvalidOperationException">
+        <see cref="P:System.IO.Stream.ReadTimeout" /> 方法总是引发 <see cref="T:System.InvalidOperationException" />。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>当在派生类中重写时，设置当前流中的位置。</summary>
+      <returns>当前流中的新位置。</returns>
+      <param name="offset">相对于 <paramref name="origin" /> 参数的字节偏移量。</param>
+      <param name="origin">
+        <see cref="T:System.IO.SeekOrigin" /> 类型的值，指示用于获取新位置的参考点。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持查找，例如在流通过管道或控制台输出构造的情况下即为如此。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.SetLength(System.Int64)">
+      <summary>当在派生类中重写时，设置当前流的长度。</summary>
+      <param name="value">所需的当前流的长度（以字节表示）。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入和查找，例如在流通过管道或控制台输出构造的情况下即为如此。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>当在派生类中重写时，向当前流中写入字节序列，并将此流中的当前位置提升写入的字节数。</summary>
+      <param name="buffer">字节数组。此方法将 <paramref name="count" /> 个字节从 <paramref name="buffer" /> 复制到当前流。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始将字节复制到当前流。</param>
+      <param name="count">要写入当前流的字节数。</param>
+      <exception cref="T:System.ArgumentException">总和 <paramref name="offset" /> 和 <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" />  是 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">将出现 I/O 错误，如找不到指定的文件。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> 流关闭后调用。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)">
+      <summary>将字节序列异步写入当前流，并将流的当前位置提升写入的字节数。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">从中写入数据的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始将字节复制到该流。</param>
+      <param name="count">最多写入的字节数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
+      <summary>将字节的序列异步写入当前流，将该流中的当前位置向前移动写入的字节数，并监视取消请求。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">从中写入数据的缓冲区。</param>
+      <param name="offset">
+        <paramref name="buffer" /> 中的从零开始的字节偏移量，从此处开始将字节复制到该流。</param>
+      <param name="count">最多写入的字节数。</param>
+      <param name="cancellationToken">要监视取消请求的标记。默认值为 <see cref="P:System.Threading.CancellationToken.None" />。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="offset" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="offset" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.NotSupportedException">流不支持写入。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">该流正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.Stream.WriteByte(System.Byte)">
+      <summary>将一个字节写入流内的当前位置，并将流内的位置向前提升一个字节。</summary>
+      <param name="value">要写入流中的字节。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.NotSupportedException">该流不支持写入，或者该流已关闭。</exception>
+      <exception cref="T:System.ObjectDisposedException">在流关闭后调用方法。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.Stream.WriteTimeout">
+      <summary>获取或设置一个值（以毫秒为单位），该值确定流在超时前尝试写入多长时间。</summary>
+      <returns>一个确定流在超时前尝试写入多长时间的值（以毫秒为单位）。</returns>
+      <exception cref="T:System.InvalidOperationException">
+        <see cref="P:System.IO.Stream.WriteTimeout" /> 方法总是引发 <see cref="T:System.InvalidOperationException" />。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="T:System.IO.StreamReader">
+      <summary>实现一个 <see cref="T:System.IO.TextReader" />，使其以一种特定的编码从字节流中读取字符。若要浏览此类型的.NET Framework 源代码，请参阅 Reference Source。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream)">
+      <summary>为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的新实例。</summary>
+      <param name="stream">要读取的流。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不支持读取。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Boolean)">
+      <summary>用指定的字节顺序标记检测选项，为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的一个新实例。</summary>
+      <param name="stream">要读取的流。</param>
+      <param name="detectEncodingFromByteOrderMarks">指示是否在文件头查找字节顺序标记。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不支持读取。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)">
+      <summary>用指定的字符编码为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的一个新实例。</summary>
+      <param name="stream">要读取的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不支持读取。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)">
+      <summary>为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的新实例，带有指定的字符编码和字节顺序标记检测选项。</summary>
+      <param name="stream">要读取的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="detectEncodingFromByteOrderMarks">指示是否在文件头查找字节顺序标记。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不支持读取。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)">
+      <summary>为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的新实例，带有指定的字符编码、字节顺序标记检测选项和缓冲区大小。</summary>
+      <param name="stream">要读取的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="detectEncodingFromByteOrderMarks">指示是否在文件头查找字节顺序标记。</param>
+      <param name="bufferSize">最小缓冲区大小。</param>
+      <exception cref="T:System.ArgumentException">流不支持读取。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="bufferSize" /> 小于或等于零。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)">
+      <summary>为指定的流初始化 <see cref="T:System.IO.StreamReader" /> 类的新实例，带有指定的字符编码、字节顺序标记检测选项和缓冲区大小，有选择性的打开流。</summary>
+      <param name="stream">要读取的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="detectEncodingFromByteOrderMarks">如果要在文件开头查找字节顺序标记，则为 true；否则为 false。</param>
+      <param name="bufferSize">最小缓冲区大小。</param>
+      <param name="leaveOpen">如果在释放 <see cref="T:System.IO.StreamReader" /> 对象后保持流处于打开状态，则为 true；否则为 false。</param>
+    </member>
+    <member name="P:System.IO.StreamReader.BaseStream">
+      <summary>返回基础流。</summary>
+      <returns>基础流。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.StreamReader.CurrentEncoding">
+      <summary>获取当前 <see cref="T:System.IO.StreamReader" /> 对象正在使用的当前字符编码。</summary>
+      <returns>当前读取器所使用的当前字符编码。第一次调用 <see cref="T:System.IO.StreamReader" /> 的任何 <see cref="Overload:System.IO.StreamReader.Read" /> 方法后，该值可能会不同，因为直到第一次调用 <see cref="Overload:System.IO.StreamReader.Read" /> 方法时，才会进行编码的自动检测。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.DiscardBufferedData">
+      <summary>清除内部缓冲区。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.Dispose(System.Boolean)">
+      <summary>关闭基础流，释放 <see cref="T:System.IO.StreamReader" /> 使用的未托管资源，同时还可以根据需要释放托管资源。</summary>
+      <param name="disposing">若要释放托管资源和非托管资源，则为 true；若仅释放非托管资源，则为 false。</param>
+    </member>
+    <member name="P:System.IO.StreamReader.EndOfStream">
+      <summary>获取一个值，该值指示当前的流位置是否在流结尾。</summary>
+      <returns>如果当前流位置位于流的末尾，则为 true；否则为 false。</returns>
+      <exception cref="T:System.ObjectDisposedException">基础流已释放。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:System.IO.StreamReader.Null">
+      <summary>空流周围的 <see cref="T:System.IO.StreamReader" />。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.Peek">
+      <summary>返回下一个可用字符，但不使用它。</summary>
+      <returns>为表示下一个要读取的字符的整数，或者，如果没有要读取的字符或该流不支持查找，则为 -1。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.Read">
+      <summary>读取输入流中的下一个字符并使该字符位置提升一个字符。</summary>
+      <returns>输入流中表示为 <see cref="T:System.Int32" /> 对象的下一个字符。如果不再有可用的字符，则为 -1。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)">
+      <summary>从指定的索引位置开始将来自当前流的指定的最多字符读到缓冲区。</summary>
+      <returns>已读取的字符数，或者如果已到达流结尾并且未读取任何数据，则为 0。该数小于或等于 <paramref name="count" /> 参数，具体取决于流中是否有可用的数据。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index + count - 1" />) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">开始写入的 <paramref name="buffer" /> 的索引。</param>
+      <param name="count">要读取的最大字符数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">出现 I/O 错误，如流被关闭。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>从当前流中异步读取指定的最大字符，并且从指定的索引位置开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可小于所请求的字节数；如果已到达流结尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。如果在将指定的字符数写入缓冲区之前已到达流结尾，则将返回当前方法。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)">
+      <summary>从当前流中读取指定的最大字符数并从指定的索引位置开始将该数据写入缓冲区。</summary>
+      <returns>已读取的字符数。该数字将小于或等于 <paramref name="count" />，取决于是否所有的输入字符都已读取。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index + count - 1" />) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.StreamReader" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生了 I/O 错误。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>从当前流中异步读取指定的最大字符，并且从指定的索引位置开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可小于所请求的字节数；如果已到达流结尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。如果在将指定的字符数写入到缓冲区之前就已经达到流结尾，则将返回此方法。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadLine">
+      <summary>从当前流中读取一行字符并将数据作为字符串返回。</summary>
+      <returns>输入流中的下一行；如果到达了输入流的末尾，则为 null。</returns>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadLineAsync">
+      <summary>从当前流中异步读取一行字符并将数据作为字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含来自流的下一行；如果读取了所有字符，则为 null。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">下一行中的字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadToEnd">
+      <summary>读取来自流的当前位置到结尾的所有字符。</summary>
+      <returns>字符串形式的流的其余部分（从当前位置到结尾）。如果当前位置位于流结尾，则返回空字符串 (“”)。</returns>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamReader.ReadToEndAsync">
+      <summary>异步读取来自流的当前位置到结尾的所有字符并将它们作为一个字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数值包括带有从流的当前位置到结尾的字符的字符串。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="T:System.IO.StreamWriter">
+      <summary>实现一个 <see cref="T:System.IO.TextWriter" />，使其以一种特定的编码向流中写入字符。若要浏览此类型的.NET Framework 源代码，请参阅参考源。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.#ctor(System.IO.Stream)">
+      <summary>用 UTF-8 编码及默认缓冲区大小，为指定的流初始化 <see cref="T:System.IO.StreamWriter" /> 类的一个新实例。</summary>
+      <param name="stream">要写入的流。 </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不可写。 </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding)">
+      <summary>用指定的编码及默认缓冲区大小，为指定的流初始化 <see cref="T:System.IO.StreamWriter" /> 类的新实例。</summary>
+      <param name="stream">要写入的流。</param>
+      <param name="encoding">要使用的字符编码。 </param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。 </exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不可写。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32)">
+      <summary>用指定的编码及缓冲区大小，为指定的流初始化 <see cref="T:System.IO.StreamWriter" /> 类的新实例。</summary>
+      <param name="stream">要写入的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="bufferSize">缓冲区大小（以字节为单位）。 </param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。 </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="bufferSize" /> 为负数。 </exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不可写。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)">
+      <summary>用指定的编码及默认缓冲区大小，为指定的流初始化 <see cref="T:System.IO.StreamWriter" /> 类的新实例，有选择性的打开流。</summary>
+      <param name="stream">要写入的流。</param>
+      <param name="encoding">要使用的字符编码。</param>
+      <param name="bufferSize">缓冲区大小（以字节为单位）。</param>
+      <param name="leaveOpen">true to leave the stream open after the <see cref="T:System.IO.StreamWriter" /> object is disposed; otherwise, false.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="stream" /> 或 <paramref name="encoding" /> 为 null。 </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="bufferSize" /> 为负数。 </exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="stream" /> 不可写。</exception>
+    </member>
+    <member name="P:System.IO.StreamWriter.AutoFlush">
+      <summary>获取或设置一个值，该值指示 <see cref="T:System.IO.StreamWriter" /> 是否在每次调用 <see cref="M:System.IO.StreamWriter.Write(System.Char)" /> 之后，将其缓冲区刷新到基础流。</summary>
+      <returns>强制 <see cref="T:System.IO.StreamWriter" /> 刷新其缓冲区时，为 true；否则，为 false。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="P:System.IO.StreamWriter.BaseStream">
+      <summary>获取同后备存储连接的基础流。</summary>
+      <returns>此 StreamWriter 正在写入的基础流。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.StreamWriter" /> 占用的非托管资源，还可以另外再释放托管资源。</summary>
+      <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+      <exception cref="T:System.Text.EncoderFallbackException">当前编码不支持显示半个 Unicode 代理项对。</exception>
+    </member>
+    <member name="P:System.IO.StreamWriter.Encoding">
+      <summary>获取将输出写入到其中的 <see cref="T:System.Text.Encoding" />。</summary>
+      <returns>在当前实例的构造函数中指定的 <see cref="T:System.Text.Encoding" />；或者如果未指定编码，则为 <see cref="T:System.Text.UTF8Encoding" />。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Flush">
+      <summary>清理当前写入器的所有缓冲区，并使所有缓冲数据写入基础流。</summary>
+      <exception cref="T:System.ObjectDisposedException">当前编写器已关闭。</exception>
+      <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+      <exception cref="T:System.Text.EncoderFallbackException">当前编码不支持显示半个 Unicode 代理项对。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.FlushAsync">
+      <summary>异步清除此流的所有缓冲区并导致所有缓冲数据都写入基础设备中。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+      <exception cref="T:System.ObjectDisposedException">流已被释放。</exception>
+    </member>
+    <member name="F:System.IO.StreamWriter.Null">
+      <summary>提供 StreamWriter，它不带任何可写入但无法从中读取的后备存储。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Write(System.Char)">
+      <summary>将字符写入流。</summary>
+      <param name="value">要写入流中的字符。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。 </exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且当前编写器已关闭。 </exception>
+      <exception cref="T:System.NotSupportedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且由于 <see cref="T:System.IO.StreamWriter" /> 位于基础固定大小流的结尾，缓冲区的内容无法写入该流。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Write(System.Char[])">
+      <summary>将字符数组写入流。</summary>
+      <param name="buffer">包含要写入的数据的字符数组。如果 <paramref name="buffer" /> 为 null，则不写入任何内容。</param>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。 </exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且当前编写器已关闭。 </exception>
+      <exception cref="T:System.NotSupportedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且由于 <see cref="T:System.IO.StreamWriter" /> 位于基础固定大小流的结尾，缓冲区的内容无法写入该流。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组写入流。</summary>
+      <param name="buffer">包含要写入的数据的字符数组。</param>
+      <param name="index">在开始读取数据时缓冲区中的字符位置。</param>
+      <param name="count">要写入的最大字符数。 </param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。 </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。 </exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且当前编写器已关闭。 </exception>
+      <exception cref="T:System.NotSupportedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且由于 <see cref="T:System.IO.StreamWriter" /> 位于基础固定大小流的结尾，缓冲区的内容无法写入该流。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.Write(System.String)">
+      <summary>将字符串写入流。</summary>
+      <param name="value">要写入流的字符串。如果 <paramref name="value" /> 为 null，则不写入任何内容。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且当前编写器已关闭。 </exception>
+      <exception cref="T:System.NotSupportedException">
+        <see cref="P:System.IO.StreamWriter.AutoFlush" /> 为 true 或 <see cref="T:System.IO.StreamWriter" /> 缓冲区已满，并且由于 <see cref="T:System.IO.StreamWriter" /> 位于基础固定大小流的结尾，缓冲区的内容无法写入该流。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteAsync(System.Char)">
+      <summary>将字符异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="value">要写入流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="buffer">包含要写入的数据的字符数组。</param>
+      <param name="index">在开始读取数据时缓冲区中的字符位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteAsync(System.String)">
+      <summary>将字符串异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="value">要写入流的字符串。如果 <paramref name="value" /> 为 null，则不写入任何内容。</param>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteLineAsync">
+      <summary>将行终止符异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteLineAsync(System.Char)">
+      <summary>将后跟行终止符的字符异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="value">要写入流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将后跟行终止符的字符的子数组异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始读取数据时缓冲区中的字符位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StreamWriter.WriteLineAsync(System.String)">
+      <summary>将后跟行终止符的字符串异步写入该流。</summary>
+      <returns>表示异步写操作的任务。</returns>
+      <param name="value">要写入的字符串。如果值为 null，则只写入行终止符。</param>
+      <exception cref="T:System.ObjectDisposedException">流编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">流编写器正在由其前一次写入操作使用。</exception>
+    </member>
+    <member name="T:System.IO.StringReader">
+      <summary>实现从字符串进行读取的 <see cref="T:System.IO.TextReader" />。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.#ctor(System.String)">
+      <summary>初始化从指定字符串进行读取的 <see cref="T:System.IO.StringReader" /> 类的新实例。</summary>
+      <param name="s">应将 <see cref="T:System.IO.StringReader" /> 初始化为的字符串。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="s" /> 参数为 null。</exception>
+    </member>
+    <member name="M:System.IO.StringReader.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.StringReader" /> 占用的非托管资源，还可以另外再释放托管资源。</summary>
+      <param name="disposing">true 表示释放托管资源和非托管资源；false 表示仅释放非托管资源。</param>
+    </member>
+    <member name="M:System.IO.StringReader.Peek">
+      <summary>返回下一个可用的字符，但不使用它。</summary>
+      <returns>一个表示下一个要读取的字符的整数；如果没有更多可读取的字符或该流不支持查找，则为 -1。</returns>
+      <exception cref="T:System.ObjectDisposedException">当前读取器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.Read">
+      <summary>读取输入字符串中的下一个字符并将该字符的位置提升一个字符。</summary>
+      <returns>基础字符串中的下一个字符，或者如果没有更多的可用字符，则为 -1。</returns>
+      <exception cref="T:System.ObjectDisposedException">当前读取器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)">
+      <summary>读取输入字符串中的字符块，并将字符位置提升 <paramref name="count" />。</summary>
+      <returns>读入缓冲区的总字符数。如果当前没有那么多字符可用，则总字符数可能会少于所请求的字符数，或者如果已到达基础字符串的结尾，则总字符数为零。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">缓存区中的起始索引。</param>
+      <param name="count">要读取的字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前读取器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>异步从当前字符串中读取指定数目的字符并从指定索引开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可能小于所请求的字节数，或者如果已到达字符串的末尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">最多读取的字符数。如果在写入指定数目的字符到缓冲区之前，就已经达到字符串的末尾，则方法返回。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>异步从当前字符串中读取指定数目的字符并从指定索引开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可能小于所请求的字节数，或者如果已到达字符串的末尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">最多读取的字符数。如果在写入指定数目的字符到缓冲区之前，就已经达到字符串的末尾，则方法返回。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringReader.ReadLine">
+      <summary>从当前字符串中读取一行字符并将数据作为字符串返回。</summary>
+      <returns>当前字符串中的下一行；或为 null （如果到达了字符串的末尾）。</returns>
+      <exception cref="T:System.ObjectDisposedException">当前读取器已关闭。</exception>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.ReadLineAsync">
+      <summary>从当前字符串中异步读取一行字符并将数据作为字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含来自字符串读取器的下一行或为 null 如果读取所有字符。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">下一行中的字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringReader.ReadToEnd">
+      <summary>读取从当前位置到字符串的结尾的所有字符并将它们作为单个字符串返回。</summary>
+      <returns>从当前位置到基础字符串的结尾之间的内容。</returns>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <exception cref="T:System.ObjectDisposedException">当前读取器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringReader.ReadToEndAsync">
+      <summary>异步读取从当前位置到字符串的结尾的所有字符并将它们作为单个字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数值包括字符串来自当前位置到结束字符串字符。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="T:System.IO.StringWriter">
+      <summary>实现一个用于将信息写入字符串的 <see cref="T:System.IO.TextWriter" />。该信息存储在基础 <see cref="T:System.Text.StringBuilder" /> 中。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.#ctor">
+      <summary>初始化 <see cref="T:System.IO.StringWriter" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.StringWriter.#ctor(System.IFormatProvider)">
+      <summary>使用指定的格式控制初始化 <see cref="T:System.IO.StringWriter" /> 类的新实例。</summary>
+      <param name="formatProvider">控制格式设置的 <see cref="T:System.IFormatProvider" /> 对象。</param>
+    </member>
+    <member name="M:System.IO.StringWriter.#ctor(System.Text.StringBuilder)">
+      <summary>初始化写入指定 <see cref="T:System.Text.StringBuilder" /> 的 <see cref="T:System.IO.StringWriter" /> 类的新实例。</summary>
+      <param name="sb">要写入的 StringBuilder。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sb" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.#ctor(System.Text.StringBuilder,System.IFormatProvider)">
+      <summary>初始化写入指定 <see cref="T:System.Text.StringBuilder" /> 并具有指定格式提供程序的 <see cref="T:System.IO.StringWriter" /> 类的新实例。</summary>
+      <param name="sb">要写入的 StringBuilder。</param>
+      <param name="formatProvider">控制格式设置的 <see cref="T:System.IFormatProvider" /> 对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sb" /> 为 null。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.StringWriter" /> 占用的非托管资源，还可以另外再释放托管资源。</summary>
+      <param name="disposing">true 表示释放托管资源和非托管资源；false 表示仅释放非托管资源。</param>
+    </member>
+    <member name="P:System.IO.StringWriter.Encoding">
+      <summary>获取将输出写入到其中的 <see cref="T:System.Text.Encoding" />。</summary>
+      <returns>用来写入输出的 Encoding。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.FlushAsync">
+      <summary>异步清理当前编写器的所有缓冲区，使所有缓冲数据写入基础设备。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+    </member>
+    <member name="M:System.IO.StringWriter.GetStringBuilder">
+      <summary>返回基础 <see cref="T:System.Text.StringBuilder" />。</summary>
+      <returns>基础 StringBuilder。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.ToString">
+      <summary>返回包含迄今为止写入到当前 StringWriter 中的字符的字符串。</summary>
+      <returns>包含写入到当前 StringWriter 中的字符的字符串。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.Write(System.Char)">
+      <summary>将字符写入该字符串。</summary>
+      <param name="value">要写入的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">编写器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组写入该字符串。</summary>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始读取数据缓存中的位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">(<paramref name="index" /> + <paramref name="count" />)&gt; <paramref name="buffer" />。Length.</exception>
+      <exception cref="T:System.ObjectDisposedException">编写器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.Write(System.String)">
+      <summary>将字符串写入当前流。</summary>
+      <param name="value">要写入的字符串。</param>
+      <exception cref="T:System.ObjectDisposedException">编写器已关闭。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteAsync(System.Char)">
+      <summary>以异步方式将字符写入流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入字符串中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组异步写入该字符串。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始读取数据缓存中的位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteAsync(System.String)">
+      <summary>以异步方式将字符串写入当前流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入的字符串。如果 <paramref name="value" /> 为 null，则不会将任何内容写入文本流。</param>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteLineAsync(System.Char)">
+      <summary>以异步方式将后跟行结束符的字符写入该字符串。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入字符串中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将后跟行结束符的字符子数组异步写入该字符串。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始读取数据缓存中的位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.StringWriter.WriteLineAsync(System.String)">
+      <summary>将一后跟行结束符的字符串异步写入当前字符串。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入的字符串。如果值为 null，则只写入行终止符。</param>
+      <exception cref="T:System.ObjectDisposedException">字符串编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">字符串编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="T:System.IO.TextReader">
+      <summary>表示可读取有序字符系列的读取器。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.#ctor">
+      <summary>初始化 <see cref="T:System.IO.TextReader" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.TextReader.Dispose">
+      <summary>释放由 <see cref="T:System.IO.TextReader" /> 对象使用的所有资源。</summary>
+    </member>
+    <member name="M:System.IO.TextReader.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.TextReader" /> 占用的非托管资源，还可以释放托管资源。</summary>
+      <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+    </member>
+    <member name="F:System.IO.TextReader.Null">
+      <summary>提供一个无数据可供读取的 TextReader。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.Peek">
+      <summary>读取下一个字符，而不更改读取器状态或字符源。返回下一个可用字符，而实际上并不从读取器中读取此字符。</summary>
+      <returns>一个表示下一个要读取的字符的整数；如果没有更多可读取的字符或该读取器不支持查找，则为 -1。</returns>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.Read">
+      <summary>读取文本读取器中的下一个字符并使该字符的位置前移一个字符。</summary>
+      <returns>文本读取器中的下一个字符，或为 -1（如果没有更多可用字符）。默认实现将返回 -1。</returns>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)">
+      <summary>从当前读取器中读取指定数目的字符并从指定索引开始将该数据写入缓冲区。</summary>
+      <returns>已读取的字符数。该数会小于或等于 <paramref name="count" />，具体取决于读取器中是否有可用的数据。如果调用此方法时没有留下更多的字符供读取，则此方法返回 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。如果在将指定数量的字符读入缓冲区之前就已达读取器的末尾，则返回该方法。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。 </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>异步从当前文本读取器中读取指定最大字符数并从指定索引开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可能小于所请求的字节数，或者如果已达到文本的末尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。如果在将指定数量的字符读入缓冲区之前已到达文本的末尾，则当前方法将返回。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)">
+      <summary>从当前文本读取器中读取指定的最大字符数并从指定索引处开始将该数据写入缓冲区。</summary>
+      <returns>已读取的字符数。该数字将小于或等于 <paramref name="count" />，具体取决于是否所有的输入字符都已读取。</returns>
+      <param name="buffer">此方法返回时，此参数包含指定的字符数组，该数组中从 <paramref name="index" /> 到 (<paramref name="index" /> + <paramref name="count" /> -1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。 </exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>异步从当前文本读取器中读取指定最大字符数并从指定索引开始将该数据写入缓冲区。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含读入缓冲区的总字节数。如果当前可用字节数少于所请求的字节数，则该结果值可能小于所请求的字节数，或者如果已达到文本的末尾时，则为 0（零）。</returns>
+      <param name="buffer">此方法返回时，包含指定的字符数组，该数组的 <paramref name="index" /> 和 (<paramref name="index" /> + <paramref name="count" /> - 1) 之间的值由从当前源中读取的字符替换。</param>
+      <param name="index">在 <paramref name="buffer" /> 中开始写入的位置。</param>
+      <param name="count">要读取的最大字符数。如果在将指定数量的字符读入缓冲区之前已到达文本的末尾，则当前方法将返回。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> 与 <paramref name="count" /> 的和大于缓冲区长度。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextReader.ReadLine">
+      <summary>从文本读取器中读取一行字符并将数据作为字符串返回。</summary>
+      <returns>读取器中的下一行，或为 null （如果已读取了所有字符）。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">下一行中的字符数大于 <see cref="F:System.Int32.MaxValue" /></exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.ReadLineAsync">
+      <summary>异步读取一行字符并将数据作为字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数的值包含来自文本读取器的下一行或为 null 如果读取所有字符。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">下一行中的字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextReader.ReadToEnd">
+      <summary>读取从当前位置到文本读取器末尾的所有字符并将它们作为一个字符串返回。</summary>
+      <returns>一个包含从当前位置到文本读取器末尾的所有字符的字符串。</returns>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextReader" /> 是关闭的。</exception>
+      <exception cref="T:System.OutOfMemoryException">内存不足，无法为返回的字符串分配缓冲区。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">下一行中的字符数大于 <see cref="F:System.Int32.MaxValue" /></exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextReader.ReadToEndAsync">
+      <summary>异步读取从当前位置到文本读取器末尾的所有字符并将它们作为一个字符串返回。</summary>
+      <returns>表示异步读取操作的任务。<paramref name="TResult" /> 参数值包括字符串来自当前位置到结束文本读取器字符。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">字符数大于 <see cref="F:System.Int32.MaxValue" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本读取器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次读取操作使用。</exception>
+    </member>
+    <member name="T:System.IO.TextWriter">
+      <summary>表示可以编写一个有序字符系列的编写器。此类为抽象类。</summary>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.#ctor">
+      <summary>初始化 <see cref="T:System.IO.TextWriter" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.IO.TextWriter.#ctor(System.IFormatProvider)">
+      <summary>使用指定的格式提供程序初始化 <see cref="T:System.IO.TextWriter" /> 类的新实例。</summary>
+      <param name="formatProvider">控制格式设置的 <see cref="T:System.IFormatProvider" /> 对象。</param>
+    </member>
+    <member name="F:System.IO.TextWriter.CoreNewLine">
+      <summary>存储用于此 TextWriter 的换行符。</summary>
+    </member>
+    <member name="M:System.IO.TextWriter.Dispose">
+      <summary>释放由 <see cref="T:System.IO.TextWriter" /> 对象使用的所有资源。</summary>
+    </member>
+    <member name="M:System.IO.TextWriter.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:System.IO.TextWriter" /> 占用的非托管资源，还可以释放托管资源。</summary>
+      <param name="disposing">若要释放托管资源和非托管资源，则为 true；若仅释放非托管资源，则为 false。</param>
+    </member>
+    <member name="P:System.IO.TextWriter.Encoding">
+      <summary>当在派生类中重写时，返回用来写输出的该字符编码。</summary>
+      <returns>用来写入输出的字符编码。</returns>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Flush">
+      <summary>清理当前编写器的所有缓冲区，使所有缓冲数据写入基础设备。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.FlushAsync">
+      <summary>异步清理当前编写器的所有缓冲区，使所有缓冲数据写入基础设备。</summary>
+      <returns>表示异步刷新操作的任务。</returns>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="P:System.IO.TextWriter.FormatProvider">
+      <summary>获取控制格式设置的对象。</summary>
+      <returns>特定区域性的 <see cref="T:System.IFormatProvider" /> 对象，或者如果未指定任何其他区域性，则为当前区域性的格式设置。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:System.IO.TextWriter.NewLine">
+      <summary>获取或设置由当前 TextWriter 使用的行结束符字符串。</summary>
+      <returns>当前 TextWriter 的行结束符字符串。</returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="F:System.IO.TextWriter.Null">
+      <summary>提供 TextWriter，它不带任何可写入但无法从中读取的后备存储。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Boolean)">
+      <summary>将 Boolean 值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 Boolean 值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Char)">
+      <summary>将字符写入该文本字符串或流。</summary>
+      <param name="value">要写入文本流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Char[])">
+      <summary>将字符数组写入该文本字符串或流。</summary>
+      <param name="buffer">要写入文本流中的字符数组。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组写入文本字符串或流。</summary>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始接收数据时缓存中的字符位置。</param>
+      <param name="count">要写入的字符数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 参数为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Decimal)">
+      <summary>将十进制值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的十进制值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Double)">
+      <summary>将 8 字节浮点值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节浮点值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Int32)">
+      <summary>将 4 字节有符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节有符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Int64)">
+      <summary>将 8 字节有符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节有符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Object)">
+      <summary>通过在对象上调用 ToString 方法将此对象的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的对象。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.Single)">
+      <summary>将 4 字节浮点值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节浮点值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.String)">
+      <summary>以异步形式将字符串写入到文本字符串或流。</summary>
+      <param name="value">要写入的字符串。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.String,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object)" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0）、或大于或等于要设置格式的对象数 (用于该方法重载，为一)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.String,System.Object,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object,System.Object)" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的第一个对象。</param>
+      <param name="arg1">要格式化和写入的第二个对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0） 或大于或等于要设置格式的对象数 (用于该方法重载，为二)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.String,System.Object,System.Object,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object,System.Object,System.Object)" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的第一个对象。</param>
+      <param name="arg1">要格式化和写入的第二个对象。</param>
+      <param name="arg2">要设置格式和写入的第三个对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0）、或大于或等于要设置格式的对象数 (用于该方法重载，为三)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.String,System.Object[])">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object[])" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg">一个对象数组，其中包含零个或多个要设置格式和写入的对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 或 <paramref name="arg" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0（零）或大于等于 <paramref name="arg" /> 数组的长度。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.UInt32)">
+      <summary>将 4 字节无符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节无符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.Write(System.UInt64)">
+      <summary>将 8 字节无符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节无符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteAsync(System.Char)">
+      <summary>以异步形式将字符写入到下一个文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入文本流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteAsync(System.Char[])">
+      <summary>以异步形式将字符数组写入到下一个字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要写入文本流中的字符数组。如果 <paramref name="buffer" /> 为 null，则不写入任何内容。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将字符的子数组异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始接收数据时缓存中的字符位置。</param>
+      <param name="count">要写入的字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteAsync(System.String)">
+      <summary>以异步形式将字符串写入到下一字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入的字符串。如果 <paramref name="value" /> 为 null，则不会将任何内容写入文本流。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine">
+      <summary>将行结束符的字符串写入文本字符串或流。</summary>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Boolean)">
+      <summary>将后面带有行结束符的 Boolean 值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 Boolean 值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Char)">
+      <summary>将后跟行结束符的字符写入文本字符串或流。</summary>
+      <param name="value">要写入文本流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Char[])">
+      <summary>将后跟行结束符的字符数组写入文本字符串或流。</summary>
+      <param name="buffer">从其读取数据的字符数组。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Char[],System.Int32,System.Int32)">
+      <summary>将后跟行结束符的字符子数组写入文本字符串或流。</summary>
+      <param name="buffer">从其读取数据的字符数组。</param>
+      <param name="index">在开始读取数据时 <paramref name="buffer" /> 中的字符位置。</param>
+      <param name="count">要写入的最大字符数。</param>
+      <exception cref="T:System.ArgumentException">缓冲区长度减去 <paramref name="index" /> 小于 <paramref name="count" />。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 参数为 null。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Decimal)">
+      <summary>将后面带有行结束符的十进制值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的十进制值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Double)">
+      <summary>将后跟行结束符的 8 字节浮点值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节浮点值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Int32)">
+      <summary>将后跟行结束符的 4 字节有符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节有符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Int64)">
+      <summary>将后跟行结束符的 8 字节有符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节有符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Object)">
+      <summary>通过在对象上调用 ToString 方法将后跟行结束符的此对象的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的对象。如果 <paramref name="value" /> 为 null，则只写入行终止符。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.Single)">
+      <summary>将后跟行结束符的 4 字节浮点值的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节浮点值。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.String)">
+      <summary>将后跟行结束符的字符串写入文本字符串或流。</summary>
+      <param name="value">要写入的字符串。如果 <paramref name="value" /> 为 null，则只写入行终止符。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.String,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object)" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0）、或大于或等于要设置格式的对象数 (用于该方法重载，为一)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object,System.Object)" /> 方法相同的语义将格式化字符串和新行写入文本字符串或流。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的第一个对象。</param>
+      <param name="arg1">要格式化和写入的第二个对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0）、或大于或等于要设置格式的对象数 (用于该方法重载，为二)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Object,System.Object)">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object)" /> 相同的语义写出格式化的字符串和一个新行。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg0">要格式化和写入的第一个对象。</param>
+      <param name="arg1">要格式化和写入的第二个对象。</param>
+      <param name="arg2">要设置格式和写入的第三个对象。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="format" /> 为 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0 （0）、或大于或等于要设置格式的对象数 (用于该方法重载，为三)。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.String,System.Object[])">
+      <summary>使用与 <see cref="M:System.String.Format(System.String,System.Object)" /> 相同的语义写出格式化的字符串和一个新行。</summary>
+      <param name="format">复合格式字符串（请参见“备注”）。</param>
+      <param name="arg">一个对象数组，其中包含零个或多个要设置格式和写入的对象。</param>
+      <exception cref="T:System.ArgumentNullException">字符串或对象作为 null 传入。</exception>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <exception cref="T:System.FormatException">
+        <paramref name="format" /> 不是有效的复合格式字符串。- 或 - 格式项的索引小于 0（零）或大于等于 <paramref name="arg" /> 数组的长度。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.UInt32)">
+      <summary>将后跟行结束符的 4 字节无符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 4 字节无符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLine(System.UInt64)">
+      <summary>将后跟行结束符的 8 字节无符号整数的文本表示形式写入文本字符串或流。</summary>
+      <param name="value">要写入的 8 字节无符号整数。</param>
+      <exception cref="T:System.ObjectDisposedException">
+        <see cref="T:System.IO.TextWriter" /> 是关闭的。</exception>
+      <exception cref="T:System.IO.IOException">发生 I/O 错误。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLineAsync">
+      <summary>将行结束符的字符串异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLineAsync(System.Char)">
+      <summary>将后跟行结束符的字符异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入文本流中的字符。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLineAsync(System.Char[])">
+      <summary>将后跟行结束符的字符数组异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要写入文本流中的字符数组。如果字符数组为 null，则仅写入行结束符。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)">
+      <summary>将后跟行结束符的字符子数组异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="buffer">要从中写出数据的字符数组。</param>
+      <param name="index">在开始接收数据时缓存中的字符位置。</param>
+      <param name="count">要写入的字符数。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="buffer" /> 为 null。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="index" /> plus <paramref name="count" /> 大于缓冲区长度。</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 或 <paramref name="count" /> 为负。</exception>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+    <member name="M:System.IO.TextWriter.WriteLineAsync(System.String)">
+      <summary>将后跟行结束符的字符串异步写入文本字符串或流。</summary>
+      <returns>表示异步写入操作的任务。</returns>
+      <param name="value">要写入的字符串。如果值为 null，则只写入行终止符。</param>
+      <exception cref="T:System.ObjectDisposedException">文本编写器已被释放。</exception>
+      <exception cref="T:System.InvalidOperationException">文本编写器正在由其前一次写操作使用。</exception>
+    </member>
+  </members>
+</doc>
